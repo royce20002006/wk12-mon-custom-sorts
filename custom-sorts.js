@@ -42,8 +42,26 @@ function reverseBaseSort(arr) {
   })
 }
 
+
 function frequencySort(arr) {
-  // Your code here 
+  let countChar = {};
+  
+  // Count the frequency of each element
+  for (let char of arr) {
+    countChar[char] = (countChar[char] || 0) + 1;
+  }
+  
+  
+  return arr.sort((a, b) => {
+    // Sort the array based on frequency and value
+    if (countChar[a] !== countChar[b]) {
+      return countChar[a] - countChar[b]
+      // If frequencies are equal, sort based on values
+    } else {
+      // Sort based on values in ascending order
+      return b - a; 
+    }
+  });
 }
 
 module.exports = [
