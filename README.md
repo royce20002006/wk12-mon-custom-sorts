@@ -122,4 +122,4 @@ frequencySort(arr2);        // => [1, 3, 3, 2, 2]
 frequencySort(arr3);        // => [5, -1, 4, 4, -6, -6, 1, 1, 1]
 ```
 
-[Array.sort()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+[Array.sort()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Afrray/sort
